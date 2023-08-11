@@ -1,0 +1,7 @@
+#Redirect Based on status code.
+ErrorDocument 404 http://localhost/IT_helpdesk/error/404.html
+ErrorDocument 403 http://localhost/IT_helpdesk/error/403.html
+Options -Indexes
+RewriteEngine On
+#disallow direct access to file extentions & folders listed.
+RewriteRule \.(gif|jpg|png|svg|sql|json)$ - [F]
